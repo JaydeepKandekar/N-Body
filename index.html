@@ -93,6 +93,47 @@
             <td>
                 <div class="section-title">Simulation 1</div>
                 <!-- Two GIFs for Simulation 1 -->
+                <img src="https://github.com/JaydeepKandekar/N-Body/blob/main/sim1/WITH_HALO.gif" alt="Simulation 1 WITH HALO GIF" width="60%">
+                <img src="https://github.com/JaydeepKandekar/N-Body/blob/main/sim1/WITHout_HALO.gif" alt="Simulation 1 WITH HALO GIF" width="60%">
+                <img src="https://github.com/JaydeepKandekar/N-Body/blob/main/sim1/scaled_profiles.gif" alt="Simulation 1 WITHOUT HALO GIF" width="60%">
+                <div class="simulation-text">
+                    Firstly, the galaxies are viewed from different angles as plotted in the upper and lower panels. However, when viewed along the sight, the galaxy appears as a streak of the thin disk with a central bulge. When viewed from above (vertically), it appears as a circular disk with the central bulge component. Additionally, the left panel is missing the dark matter halo particles, which are then plotted in the right panel as seen in Figure 1. The galaxy reflects the properties of the Milky Way galaxy and hence should appear spiral. Since there is no time evolution in the initial conditions file, the galaxy appears as a circular disk with a bulge at the centre. The Halo particles are dominant across the plot.
+                </div>
+            </td>
+        </tr>
+    </table>
+        <div class="section-title">Simulation 1</div>
+                <!-- Two GIFs for Simulation 1 -->
+                <img src="https://github.com/JaydeepKandekar/N-Body/blob/main/sim1/WITH_HALO.gif" alt="Simulation 1 WITH HALO GIF" width="60%">
+                <img src="https://github.com/JaydeepKandekar/N-Body/blob/main/sim1/WITHout_HALO.gif" alt="Simulation 1 WITH HALO GIF" width="60%">
+                <img src="https://github.com/JaydeepKandekar/N-Body/blob/main/sim1/scaled_profiles.gif" alt="Simulation 1 WITHOUT HALO GIF" width="60%">
+                <div class="simulation-text">
+                The evolution of the disk galaxy over time involved copying a compiled simulation code called
+
+"vine_3D" from the Fortran directory. This modern code utilized a tree code (Binary tree) for simu-
+lation. The ’insph’ file, containing various parameters for the simulation such as Plummer softening,
+
+time step, and initialization settings, played a crucial role. Key parameters focused on for this simu-
+lation were Plummer softening (’eps’), time step (’dtinit’), and the initial file (’base’). Simulation 1
+
+involved dynamically evolving a disk galaxy using N-body simulations with specific parameters. The
+Plummer softening was set to 0.1, the time step to 0.01, and the base to ’SPIRAL_000.’ Visualization
+revealed the evolving galaxy structure, with slight visibility of spiral arms due to dark halos (figure
+2). Quantitative analysis with "plot_vcirc.py" provided velocity profiles, cumulative mass, and surface
+density profiles for Disk, Bulge, and Halo components. The surface density decreases with the radius,
+and the cumulative mass for halo particles increases with the radius. The circular velocity of the
+bulge showed small variations. Results were presented in both code units and standard units (km/s,
+solar masses, kpc), offering a comprehensive understanding of galaxy component behaviour as the
+simulation progressed to t=100 (figure 3).   
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table id="Simulation2" class="section">
+        <tr>
+            <td>
+                <div class="section-title">Simulation 2</div>
+                <!-- Two GIFs for Simulation 1 -->
                 <img src="https://i.imgur.com/your_with_halo.gif" alt="Simulation 1 WITH HALO GIF" width="60%">
                 <img src="https://i.imgur.com/your_without_halo.gif" alt="Simulation 1 WITHOUT HALO GIF" width="60%">
                 <div class="simulation-text">
@@ -101,23 +142,5 @@
             </td>
         </tr>
     </table>
-
-    <!-- Simulation 2 Section -->
-    <!-- Add your code for Simulation 2 here -->
-
-    <!-- Simulation 3 Section -->
-    <!-- Add your code for Simulation 3 here -->
-
-    <!-- Simulation 4 Section -->
-    <!-- Add your code for Simulation 4 here -->
-
-    <!-- Simulation 5 Section -->
-    <!-- Add your code for Simulation 5 here -->
-
-    <!-- Simulation 6 Section -->
-    <!-- Add your code for Simulation 6 here -->
-
-    <!-- Contact Section -->
-    <!-- Add your code for the contact section here -->
 </body>
 </html>
