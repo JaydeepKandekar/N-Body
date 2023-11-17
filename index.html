@@ -74,9 +74,9 @@
                         <td>|</td>
                         <td><a href="#Simulation2">SOFTENING PARAMETER</a></td>
                         <td>|</td>
-                        <td><a href="#Simulation4">TIME STEP</a></td>
+                        <td><a href="#Simulation3">TIME STEP</a></td>
                         <td>|</td>
-                        <td><a href="#Simulation6">MERGER</a></td>
+                        <td><a href="#Simulation4">MERGER</a></td>
                     </tr>
                 </table>
             </td>
@@ -148,23 +148,48 @@ softening lengths.
             <td>
                 <div class="section-title">TIME STEP</div>
                 <!-- Two GIFs for Simulation 1 -->
-                <img src="sim4/step0.1.gif.gif" alt="Simulation 3 with time step" width="400" height="450">
+                <img src="sim4/step0.1.gif" alt="Simulation 3 with time step" width="400" height="450">
                  <img src="sim5/step-4.gif" alt="Simulation 3 with time step" width="400" height="450">
                 <div class="simulation-text">
-                   Simulations 2 and 3 explored the impact of manipulating the softening length ("eps") and time step on
-the stability and accuracy of the particle system. Keeping the time step constant and varying "eps",
+                   In Simulations 4 and 5, the focus shifted to keeping the softening length constant while varying
+only the timestep. Simulation 4 explored changes in accuracy by adjusting the timestep from 0.01
+(original time) to 0.1 and 0.001 for simulation 5. The accuracy decreases as the timestep increases.
+Smaller timesteps can enhance accuracy but may slow the simulation and use more resources. The
+accuracy increased when set to 0.001, revealing that smaller timesteps can resolve the system with good
+accuracy. However, there were minor variations in the bulge component’s surface density compared to
+Simulation 4, indicating that changing the timestep influences the distribution of galactic component
+profiles over the radius which is considerably tiny. Adjusting the timestep affects how often particle
+positions and velocities are updated (figure 8 and figure 9).
+                </div>
+            </td>
+        </tr>
+    </table>
 
-it was found that reducing "eps" to 0.0001 resulted in a smoother and more accurate simulation. Set-
-ting "eps" to 1 demonstrated the circular dispersion of particles, emphasizing the need for a balanced
+        <table id="Simulation3" class="section">
+        <tr>
+            <td>
+                <div class="section-title">TIME STEP</div>
+                <!-- Two GIFs for Simulation 1 -->
+                <img src="https://drive.google.com/file/d/1VSZ3gnjEKqgKjM8wMWB-LFX35EWOOcCr/view" alt="MERGER" width="400" height="450">
+                 <img src="Circular.gif" alt="MERGER" width="400" height="450">
+                <div class="simulation-text">
+                  Figure 10 depicts the evolving interaction of two galaxies with a softening length ("eps") of 0.1 and a
+timestep ("dtinit") of 0.01. Starting at a 30-degree tilt, the gravitational forces between the galaxies
+create swirling tidal tails. As they get closer, the galaxies lose their distinct disk shapes and merge
+into a more spherical form. The collisions result in distorted disks and eventually lead to the merging
+of galactic nuclei, forming a spheroidal galaxy. The last plot shows the system relaxing, with some
+particles still interacting. The simulation generated 400 dumps.
 
-softening length (figure 5 and figure 6). The simulations highlight the art of choosing the right "eps"
+Quantitative analysis in Figure 12, produced using "plotvcircular.py," reveals the distribution of cir-
+cular velocity, cumulative mass, and surface density during the galaxy merger. As galaxies come
 
-value for accurate and realistic outcomes, as "eps" acts as a safety measure in calculations to avoid nu-
-merical problems when particles are close. The consequences of setting "eps" too high were illustrated,
-
-showing significant changes in the system with particles exhibiting unrealistic flows and fluctuations in circular velocity, cumulative mass, and surface density. In summary, these simulations emphasized
-the importance of selecting the softening parameter to achieve realistic and stable simulations. The
-results provided valuable insights into the dynamics of the simulated galaxy system under different
+close, the circular velocity fluctuates due to gravitational forces and tidal effects. The cumulative
+mass profile shows changes in total mass within specific distances as the merger progresses. Surface
+density increases during the early stages, with fluctuations resulting from mass redistribution during
+gravitational interactions. While the plot appears similar, the scaling values differ from those in the figure
+11. For a more dynamic understanding, a movie is recommended through the provided GitHub link.
+The extensive analysis involved computing the mass of the disk based on the surface density, Half
+mass radius and Dynamical time which is discussed in section 3.7
 softening lengths.
                 </div>
             </td>
